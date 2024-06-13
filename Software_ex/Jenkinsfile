@@ -21,7 +21,7 @@
           steps {
               script {
                   // Run tests using the specified classpath
-                  bat 'java -cp %CLASSPATH% org.junit.platform.console.ConsoleLauncher --scan-classpath > test_results.txt
+                  bat 'java -cp classes;lib/;path/to/eclipse/plugins/junitplatform-console-standalone-1.7.1.jar org.junit.platform.console.ConsoleLauncher--scan-classpath> test_results.txt'
               }
           }
       }
