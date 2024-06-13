@@ -14,7 +14,7 @@
         }
         stage('Build') {
           steps {
-              bat 'javac -encoding UTF-8 -d classes Software_ex/src/JunitTestTest.java'
+              bat 'javac -encoding UTF-8 -d classes Software_ex/src/*.java'
           }
       }
       stage('Test') {
