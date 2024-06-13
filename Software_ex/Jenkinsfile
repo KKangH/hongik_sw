@@ -29,7 +29,7 @@ post {
             archiveArtifacts 'test_results.txt'
         }
         failure {
-            echo ‘Build or test failed'
+            echo 'Build or test failed'
         }
         success {
             echo ‘Build and test succeeded'
