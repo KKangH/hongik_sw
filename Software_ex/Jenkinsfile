@@ -14,10 +14,7 @@
         }
         stage('Build') {
           steps {
-              script {
-                  // Clean and compile the Java project
-                  sh 'javac -cp $CLASSPATH src/**/*.java -d classes'
-              }
+              bat 'javac -encoding UTF-8 -d classes Software_ex/src/**/*.java'
           }
       }
       stage('Test') {
